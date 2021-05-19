@@ -45,33 +45,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jacob\\.nuget\\packages\\": {}
+    "/Users/jacob/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "projectUniqueName": "/Users/jacob/Projects/OdeToFood/OdeToFood/OdeToFood.csproj",
       "projectName": "OdeToFood",
-      "projectPath": "F:\\Projects\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
-      "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\OdeToFood\\OdeToFood\\obj\\",
+      "projectPath": "/Users/jacob/Projects/OdeToFood/OdeToFood/OdeToFood.csproj",
+      "packagesPath": "/Users/jacob/.nuget/packages/",
+      "outputPath": "/Users/jacob/Projects/OdeToFood/OdeToFood/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jacob/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\Projects\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
-              "projectPath": "F:\\Projects\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
+            "/Users/jacob/Projects/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj": {
+              "projectPath": "/Users/jacob/Projects/OdeToFood/OdeToFood.Data/OdeToFood.Data.csproj"
             }
           }
         }
@@ -102,7 +104,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
       }
     }
   }
