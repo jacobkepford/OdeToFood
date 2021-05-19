@@ -14445,6 +14445,11 @@
       "FilePath": "/Users/jacob/Projects/OdeToFood/OdeToFood/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/jacob/Projects/OdeToFood/OdeToFood/Pages/Restaurants/NotFound.cshtml",
+      "TargetPath": "Pages\\Restaurants\\NotFound.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
