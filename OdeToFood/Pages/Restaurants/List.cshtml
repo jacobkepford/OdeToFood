@@ -8,7 +8,7 @@
 <form method="get">
     <div class="form-group">
         <div class="input-group">
-            <input type="search" class="form-control" asp-for="SearchTerm"/>
+            <input type="search" class="form-control" asp-for="SearchTerm" />
             <span>
                 <button class="btn btn-default">
                     <i class="fas fa-search"></i>
@@ -19,7 +19,7 @@
 </form>
 
 <table class="table">
-    @foreach(var restaurant in Model.Restaurants)
+    @foreach (var restaurant in Model.Restaurants)
     {
         <tr>
             <td>@restaurant.Name</td>
@@ -28,6 +28,9 @@
             <td>
                 <a class="btn btn-lg" asp-page="./Detail" asp-route-restaurantID="@restaurant.Id">
                     <i class="fas fa-search-plus"></i>
+                </a>
+                <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantID="@restaurant.Id">
+                    <i class="fas fa-edit"></i>
                 </a>
             </td>
         </tr>
