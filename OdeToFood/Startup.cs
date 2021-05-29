@@ -16,7 +16,7 @@ namespace OdeToFood
 {
     public class Startup
     {
-        private string _connection = null;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
