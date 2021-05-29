@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
 using OdeToFood.Data;
 
 namespace OdeToFood
@@ -27,9 +28,14 @@ namespace OdeToFood
         public void ConfigureServices(IServiceCollection services)
         {
 
+            var builder = new SqlConnectionStringBuilder(Configuration.GetConnectionString("OdeToFoodDb"));
+            builder.Password = Configuration.GetSection("DBPass").Value;
+            var connectionString = builder.ConnectionString;
+
+
             services.AddDbContextPool<OdeToFoodDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb"));
+                options.UseSqlServer(connectionString);
             });
 
 
