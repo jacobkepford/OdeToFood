@@ -13,7 +13,6 @@ namespace OdeToFood.Pages.Restaurants
     {
         private readonly IRestaurantData restaurantData;
 
-        public string Message { get; set; }
         public IEnumerable<Restaurant> Restaurants { get; set; }
 
         [BindProperty(SupportsGet =true)]
@@ -25,7 +24,6 @@ namespace OdeToFood.Pages.Restaurants
         }
         public void OnGet()
         {
-            Message = "Hello, World!";
             Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
         }
     }

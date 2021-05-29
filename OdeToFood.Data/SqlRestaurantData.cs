@@ -11,6 +11,12 @@ namespace OdeToFood.Data
         {
             this.db = db;
         }
+
+        public Restaurant Add(Restaurant newRestaurant)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public int Commit()
         {
             throw new System.NotImplementedException();
